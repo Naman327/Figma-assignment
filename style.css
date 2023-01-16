@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper {
+  background-color: black;
+}
+
+.second {
+  width: 1440px;
+  background-color: #e5e5e5;
+  position: relative;
+  left: 50px;
+  top: 00px;
+  border: 2px solid rgb(79, 98, 150);
+  height: 990px;
+}
+
+.img1 {
+  position: absolute;
+  width: 160px;
+  height: 36.02px;
+  left: 60px;
+  top: 40px;
+
+  background: url(wobot-logo.png);
+}
+
+.middle {
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 91px;
+  gap: 24px;
+
+  position: absolute;
+
+  left: 440px;
+  top: 93px;
+
+  /* White */
+
+  background: #ffffff;
+  /* Normal box */
+
+  box-shadow: 4px 4px 20px rgba(157, 157, 157, 0.12);
+  border-radius: 15px;
+}
+
+.box1 {
+  /* border: 1px solid black; */
+  width: Hug(378px);
+  height: Hug(185px);
+  gap: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  top: 40px;
+  left: 91px;
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  /* align-self: stretch; */
+  flex-grow: 0;
+}
+.box1a {
+  /* border: 1px solid black; */
+  width: 51px;
+  height: 48px;
+  /* left: 163.5px; */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  position: relative;
+}
+
+.box1img1 {
+  width: 11.05px;
+  height: 21.55px;
+  border-radius: 100px;
+  position: absolute;
+  left: 59.92%;
+  right: 18.42%;
+  top: 11.96%;
+  bottom: 43.15%;
+
+  /* Primary color */
+
+  background: #3766e8;
+  transform: matrix(0.86, -0.52, 0.51, 0.86, 0, 0);
+}
+
+.box1img2 {
+  width: 11.05px;
+  height: 42.37px;
+  position: absolute;
+  left: 35.31%;
+  right: 55.02%;
+  top: 11.03%;
+  bottom: -6.3%;
+
+  /* Primary color */
+
+  background: #3766e8;
+  border-radius: 100px;
+  transform: matrix(0.86, -0.52, 0.51, 0.86, 0, 0);
+}
+
+.box1img3 {
+  width: 11.05px;
+  height: 27.84px;
+  position: absolute;
+  left: 5%;
+  right: 78.34%;
+  top: 45.12%;
+  bottom: -8.13%;
+
+  /* Primary color */
+
+  background: #3766e8;
+  border-radius: 100px;
+  transform: matrix(0.86, -0.52, 0.51, 0.86, 0, 0);
+}
+
+.box1b {
+  width: Fill(378px);
+  height: 60px;
+  position: relative;
+  /* top: 72px; */
+  /* Heading 3 */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+
+  /* Heading Primary */
+
+  color: #212121;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.box1c {
+  width: 378px;
+  height: hug(37px);
+
+  position: relative;
+
+  /* Caption */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  text-align: center;
+
+  color: #545454;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.box2 {
+  /* border: 1px solid black; */
+  width: 368px;
+  height: 262px;
+  /* top: 249px; */
+  /* left: 91px; */
+  /* gap: 8px; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.field1 {
+  position: relative;
+  /* border: 1px solid black; */
+  width: 368px;
+  height: 82px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.label1 {
+  position: absolute;
+  width: 155px;
+  height: 17px;
+  left: 0px;
+  top: 0px;
+
+  /* Label */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Text Primary */
+
+  color: #545454;
+}
+
+#companyname {
+  position: absolute;
+  height: 36px;
+  left: 0%;
+  right: 0%;
+  top: 25px;
+
+  border-radius: 6px;
+}
+
+::placeholder {
+  position: absolute;
+  height: 19px;
+  left: 12px;
+  right: 12px;
+  top: calc(50% - 19px / 2 + 1.5px);
+
+  /* Caption */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height, or 131% */
+
+  /* Text Tertiary */
+
+  color: #a0a0a0;
+}
+
+.field2 {
+  position: relative;
+  /* border: 1px solid black; */
+  width: 368px;
+  height: 75px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.label2 {
+  position: absolute;
+  width: 76px;
+  height: 17px;
+  left: 0px;
+  top: 0px;
+
+  /* Label */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Text Primary */
+
+  color: #545454;
+}
+#Industry {
+  position: absolute;
+  height: 36px;
+  left: 0%;
+  right: 0%;
+  top: 25px;
+}
+
+.polygon {
+  position: absolute;
+  width: 8px;
+  height: 6px;
+  right: 10px;
+  top: calc(50% - 2px / 2);
+
+  /* Text Primary */
+}
+.polygon:hover {
+  cursor: pointer;
+}
+
+.field3 {
+  /* border: 1px solid black; */
+  width: 352px;
+  height: 82px;
+  position: relative;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.Companysize {
+  position: absolute;
+  width: 105px;
+  height: 17px;
+  left: 0px;
+  top: 0px;
+
+  /* Label */
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 17px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  /* Text Primary */
+
+  color: #545454;
+}
+
+.size:hover {
+  cursor: pointer;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 310px;
+  padding: 10px 40px;
+  gap: 8px;
+
+  width: 368px;
+  height: 36px;
+
+  /* Primary color */
+
+  background: #3766e8;
+  border-radius: 5px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  text-align: center;
+}
+.button:hover{
+    cursor: pointer;
+    background-color: #545454;
+}
+
+
+.bottom {
+  position: absolute;
+  width: 185px;
+  height: 19px;
+  left: 627px;
+  top: 850px;
+
+/* Caption */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+/* identical to box height, or 131% */
+
+/* Text Primary */
+
+color: #545454;
+}
